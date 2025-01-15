@@ -1,0 +1,215 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background: #a3ddcb5e;
+    line-height: 1.6;
+}
+@media(max-width:48rem) {
+    body {
+        font-family: Arial, sans-serif;
+        color: #000000;
+        background: #a3ddcb5e;
+        line-height: 1.6;
+    }
+}
+
+/* Navbar / Task Bar */
+.navbar {
+    width: 100%;
+    background: #333;
+    color: #000000;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #f3f3f8fa;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?business,office');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem; /* Offset for fixed navbar */
+    color: #000000;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 0.8rem 2rem;
+    background-color: #fff8f8;
+    color: #000000;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    pointer-events: stroke;
+}
+
+.cta-button:hover {
+    background-color: #e05555;
+}
+
+/* About Us Section */
+.about {
+    padding: 4rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.next {
+    font-size: medium;
+    text-align: start;
+    margin: 10px;
+    padding: 10px;
+    font-family: serif;
+    
+}
+
+#para {
+    padding:30px;
+    margin:2px;
+   
+}
+
+@media (max-width : 600px) {
+    #para {
+        padding:30px;
+        margin:2px;
+       
+    }
+
+}
+
+
+
+.button {
+    padding: 0.8rem 2rem;
+    background-color: #fff8f8;
+    color: #000000;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    pointer-events: stroke;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.button:hover {
+    background-color: #e05555;
+}
+
+.more {
+    font-size: medium;
+    text-align: start;
+    margin: 10px;
+    padding: 10px;
+    font-family: serif;
+}
+
+
+.service {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: start;
+    margin: 10px;
+    padding: 20px;
+    font-family: serif;
+    
+}
+
+
+.button1 { 
+    background-color: #fff8f8;
+    color: #000000;
+    font: size 10px;
+    transition: background-color 0.3s ease;
+    pointer-events: stroke;
+    margin: 20px;
+    padding: 20px;
+
+} 
+
+.button1:hover {
+    background-color: #e05555;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Task Bar / Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Share-Satta</h1>
+            <ul class="menu">
+                <li><a href="#hero"  onclick="next()">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services" onclick="service()">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#socials">Socials</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p> Discover our services and solutions to grow your business.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </header>
+ <script>
+    function next() {
+    window.location.href = "nextpage.html";
+    }
+    function service() {
+        window.location.href = "service.html";    
+    }
+
+
+    
+ </script>    
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of dedicated professionals committed to helping your business thrive. Our services are designed to deliver exceptional results and unparalleled support.</p>
+        </div>
+    </section>
+</body>
+</html>
+
