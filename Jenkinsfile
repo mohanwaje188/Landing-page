@@ -28,4 +28,16 @@ pipeline {
         }
       }
     }
+  post {
+    success {
+      echo 'deployment successfull'
+    }
+    failure {
+      echo ' deployment failed'
+    }
+    always {
+      echo ' cleaning workspace'
+      cleanWs()
+    }
+  }
 }
