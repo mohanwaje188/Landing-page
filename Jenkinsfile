@@ -7,7 +7,7 @@ pipeline {
           echo 'Hello Mohann'
         }  
           }
-       stage('build the docker image') {
+       stage('Build Doxker IMAGE') {
           steps {
             sh ' docker build -t employee-portal .'
         }
