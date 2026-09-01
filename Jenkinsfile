@@ -7,17 +7,18 @@ pipeline {
           echo 'Hello Mohann'
         }  
           }
-       stage('Test') {
-         steps {
-           sh ' test -f index.html'
-           echo 'test pass'
-         }
-       }
+       
        stage('Build Doxker IMAGE') {
           steps {
             sh ' docker build -t employee-portal .'
         }
       }
+      stage('Test') {
+         steps {
+           sh ' test -f index.html'
+           echo 'test pass'
+         }
+       }
       stage('deploy container') {
         steps {
           sh '''
